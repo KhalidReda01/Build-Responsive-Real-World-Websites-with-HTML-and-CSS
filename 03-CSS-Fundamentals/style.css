@@ -85,6 +85,28 @@ li:last-child {
 /* li:nth-child(3) {
   color:red;
 } */
-article p:last-child{
+
+/*Misconecteption this wolnt work*/
+/* article p:last-child{
   color:red
+} */
+
+/*Sytling  links*/
+
+a:link {
+  color:#1098ad;
+  text-decoration: none;
+}
+a:visited {
+  color:#1098ad;
+}
+a:hover {
+  color:orangered;
+  font-weight:bold;
+  text-decoration:underline  orangered
+
+}
+a:active { 
+  background-color:black;
+  font-style:italic;
 }
