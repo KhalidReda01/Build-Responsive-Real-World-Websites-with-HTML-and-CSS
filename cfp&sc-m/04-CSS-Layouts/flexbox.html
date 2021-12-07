@@ -41,28 +41,23 @@
 
         /* FLEXBOX */
         display:flex;
+        justify-content: center;
         align-items:center;
-        justify-content:
-        -start;
-        gap:30px
+        gap:2px;
       }
-      /* .el {
-        margin-right:30px;
-      } */
-      .el--1{
-        align-self:flex-start;
-        /* order:2 */
-      }
-      /* .el--4{
-        align-self: stretch;
-      } */
-      .el--5{
-        align-self: stretch;
-        order:1;
-      }
-      .el--6{
-        order:-1;
-      }
+
+.el--1{
+  align-self:center;
+  order:1
+}
+.el--2{
+  align-self:stretch;
+  order:-1
+}
+.el--3 {
+  align-self: flex-start;
+  order:1
+}
     </style>
   </head>
   <body>
