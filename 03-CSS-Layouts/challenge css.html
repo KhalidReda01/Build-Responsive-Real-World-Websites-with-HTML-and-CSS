@@ -19,7 +19,7 @@
 
     .container {
       /* width:50%; */
-      width: 900px;
+      width: 850px;
       margin-left: auto;
       margin-right: auto;
       margin-top: 40px;
@@ -40,7 +40,7 @@
 
     strong {
       font-size: 25px;
-      float:left;
+      /* float: left; */
 
 
     }
@@ -49,9 +49,9 @@
       text-transform: uppercase;
       color: grey;
       font-weight: bold;
-      float:right;
-      margin-top:7px;
-      margin-right: 16px
+      /* float:right; */
+      margin-top: 7px;
+      /* margin-right: 16px */
     }
 
     .product-title {
@@ -66,7 +66,7 @@
     .info-paragraph {
       margin-bottom: 20px;
       margin-top: 20px;
-      clear:both;
+      clear: both;
     }
 
     a:link,
@@ -117,11 +117,15 @@
     .colors {
       width: 20px;
       height: 20px;
-      display: inline-block;
+      /* display: inline-block; */
       margin-right: 10px;
       margin-top: 20px;
 
 
+    }
+
+    .colors-group {
+      display: flex;
     }
 
     .color-related1 {
@@ -168,7 +172,8 @@
       left: -25px;
 
     }
-    .img-container{
+
+    /* .img-container{
       float:left;
       width:200px
     
@@ -183,6 +188,31 @@
       float:right;
       margin-top:20px;
 
+    } */
+
+    .flex-all {
+      display: flex;
+      gap: 50px
+
+    }
+
+    .flex-title {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .special-paragraph {
+      align-self: flex-end;
+      margin-bottom: 4px
+    }
+    .product-container{
+      flex:1;
+
+    }
+    .details-container{
+      flex:1
+
     }
   </style>
 </head>
@@ -190,34 +220,40 @@
 <body>
   <div class="container">
     <article>
+
       <h2 class=title>Converse Chuck Taylor All Star Low Top</h2>
       <p class="flying-sale">sale</p>
-      <div class=img-container>
-        <img src="img/challenges.jpg" alt="a shoes" width="250" height="250">
+      <div class="flex-all">
+        <div class=img-container>
+          <img src="img/challenges.jpg" alt="a shoes" width="250" height="250">
+        </div>
+        <div class='product-container'>
+          <div class="flex-title">
+            <p><strong>$65.00</strong></p>
+            <p class='special-paragraph'>Free shipping</p>
+          </div>
+          <p class='info-paragraph'>Ready to dress up or down, these classic canvas chucks are an everyday wardrobe
+            staple .
+          </p>
+          <a href="www.converse.com">More information &#8594</a>
+          <div class="colors-group">
+            <div class="color-related1 colors"></div>
+            <div class="color-related2 colors"></div>
+            <div class="color-related3 colors"></div>
+            <div class="color-related4 colors"></div>
+            <div class="color-related5 colors"></div>
+            <div class="color-related6 colors"></div>
+          </div>
+        </div>
+        <div class='details-container'>
+          <h2 class='product-title'>Product details</h2>
+          <ul>
+            <li>Lightweight, durable canvas sneaker</li>
+            <li>Lightly padded footbed for added comfort</li>
+            <li>Iconic chuck Taylor ankle patch</li>
+          </ul>
+        </div>
       </div>
-<div class='product-container'>
-      <p><strong>$65.00</strong></p>
-      <p class='special-paragraph'>Free shipping</p>
-      <p class='info-paragraph'>Ready to dress up or down, these classic canvas chucks are an everyday wardrobe staple .
-      </p>
-      <a href="www.converse.com">More information &#8594</a>
-      <div class="colors-group">
-        <div class="color-related1 colors"></div>
-        <div class="color-related2 colors"></div>
-        <div class="color-related3 colors"></div>
-        <div class="color-related4 colors"></div>
-        <div class="color-related5 colors"></div>
-        <div class="color-related6 colors"></div>
-      </div>
-    </div>
-    <div class='details-container'>
-      <h2 class='product-title'>Product details</h2>
-      <ul>
-        <li>Lightweight, durable canvas sneaker</li>
-        <li>Lightly padded footbed for added comfort</li>
-        <li>Iconic chuck Taylor ankle patch</li>
-      </ul>
-    </div>
       <button>Add to cart </button>
     </article>
   </div>
