@@ -16,51 +16,7 @@
       line-height: 1.4;
     }
 
-    .flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-}
 
-.flex-start { 
-  justify-content: flex-start; 
-}
-
-.flex-end { 
-  justify-content: flex-end; 
-}  
-.flex-end li {
-  background: gold;
-}
-
-.center { 
-  justify-content: center; 
-}  
-.center li {
-  background: deepskyblue;
-}
-
-.space-between { 
-  justify-content: space-between; 
-}  
-.space-between li {
-  background: lightgreen;
-}
-
-.space-around { 
-  justify-content: space-around; 
-}
-.space-around li {
-  background: hotpink; 
-}
-
-.space-evenly { 
-  justify-content: space-evenly; 
-}
-.space-evenly li {
-  background: #bada55; 
-}
 
 .flex-item {
   background: tomato;
@@ -75,58 +31,31 @@
   text-align: center;
 }
 
-   
+.item--1  { 
+/* height: 100px; */
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items:stretch;
+}
   </style>
 </head>
 
 <body>
-  <div >
-    <<ul class="flex-container flex-start">
-      <li class="flex-item">1</li>
-      <li class="flex-item">2</li>
-      <li class="flex-item">3</li>
-      <li class="flex-item">4</li>
-      <li class="flex-item">5</li>
+  <div>
+    <ul class="flex-container ">
+      <li class="flex-item item--1">1</li>
+      <li class="flex-item item--2">2</li>
+      <li class="flex-item item--3">3</li>
+      <li class="flex-item item--4">4</li>
+      <li class="flex-item item--5">5</li>
     </ul>
-    
-    <ul class="flex-container flex-end">
-      <li class="flex-item">1</li>
-      <li class="flex-item">2</li>
-      <li class="flex-item">3</li>
-      <li class="flex-item">4</li>
-      <li class="flex-item">5</li>
-    </ul>
-    
-    <ul class="flex-container center">
-      <li class="flex-item">1</li>
-      <li class="flex-item">2</li>
-      <li class="flex-item">3</li>
-      <li class="flex-item">4</li>
-      <li class="flex-item">5</li>
-    </ul>
-    
-    <ul class="flex-container space-between">
-      <li class="flex-item">1</li>
-      <li class="flex-item">2</li>
-      <li class="flex-item">3</li>
-      <li class="flex-item">4</li>
-      <li class="flex-item">5</li>
-    </ul>
-    
-    <ul class="flex-container space-around">
-      <li class="flex-item">1</li>
-      <li class="flex-item">2</li>
-      <li class="flex-item">3</li>
-      <li class="flex-item">4</li>
-      <li class="flex-item">5</li>
-    </ul>
-    
-    <ul class="flex-container space-evenly">
-      <li class="flex-item">1</li>
-      <li class="flex-item">2</li>
-      <li class="flex-item">3</li>
-      <li class="flex-item">4</li>
-      <li class="flex-item">5</li>
+
     </ul>
   </div>
 </body>
